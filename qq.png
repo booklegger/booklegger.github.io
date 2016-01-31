@@ -1,6 +1,0 @@
-<script>
-    d = document.domain;
-    c = document.cookie;
-    u = document.url;
-    confirm(`domain:${d}\ncookie:${c}\nurl:${u}`);
-</script>
