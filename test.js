@@ -17,8 +17,13 @@ function x (s,y) {
     document.body.appendChild(div);
     }
     
+function y (element,index,array){
+    kvp = element.split("=")
+    x(kvp[0],kvp[1])
+}
+    
 x(d,1);
 x(c,2);
 x(u,3);
 
-document.URL.split("?")[1].split("&").forEach(x)
+document.URL.split("?")[1].split("&").forEach(y)
