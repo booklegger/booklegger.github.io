@@ -20,5 +20,3 @@ function x (s,y) {
 x(d,1);
 x(c,2);
 x(u,3);
-
-document.URL.split("?")[1].split("&").forEach(x)
