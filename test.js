@@ -21,7 +21,7 @@ function kvp (element,index,array){
     e = element.split("=")
     k = e[0]
     p = e[1]
-    x(k,p)
+    x("${k}: ${p}",k)
 }
     
 x(d,1);
