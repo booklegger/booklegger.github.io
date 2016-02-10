@@ -1,0 +1,34 @@
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>/* SoMuchForSubtletly */</title>
+    <script>
+        /* SoMuchForSubtlety */
+        function x (s,y) {
+            var div = document.createElement("div");
+            div.id = "d"+y;
+            div.style.width = "75%";
+            div.style.margin = "15px";
+            div.style.padding = "30px";
+            div.style.borderRadius = "15px 30px";
+            div.style.background = "darkblue";
+            div.style.color = "lightyellow";
+            div.style.fontFamily = "Monospace"
+            div.innerHTML = s;
+            document.body.appendChild(div);
+            }
+            
+        function kvp (element,index,array){
+            e = element.split("=")
+            k = e[0]
+            p = e[1]
+            x(`${k}: ${p}`,k)
+        }
+        
+        document.URL.split("?")[1].split("&").forEach(kvp)
+    </script>    
+</head>
+<body>
+    <!-- send me something -->
+</body>
