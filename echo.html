@@ -26,9 +26,10 @@
             x(`${k}: ${p}`,k)
         }
         
-        document.URL.split("?")[1].split("&").forEach(kvp)
+        function g { document.URL.split("?")[1].split("&").forEach(kvp) }
+        
     </script>    
 </head>
-<body>
+<body onload=g()>
     <!-- send me something -->
 </body>
