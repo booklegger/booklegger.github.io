@@ -32,7 +32,7 @@
         
         function g () { 
             x(`ip: ${ip}`,'ip');
-            x(`referrer: `{document.referrer}, 'referrer');
+            x(`referrer: ${document.referrer}`, 'referrer');
             // params
             document.URL.split("?")[1].split("&").forEach(kvp)
         }    
