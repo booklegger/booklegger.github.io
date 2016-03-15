@@ -19,7 +19,6 @@
             div.style.background = "darkblue";
             div.style.color = "lightyellow";
             div.style.fontFamily = "Monospace"
-            // div.background= "-webkit-linear-gradient(left, #2F2727, #1a82f7)";
             div.innerHTML = s;
             document.body.appendChild(div);
             }
@@ -31,7 +30,12 @@
             x(`${k}: ${p}`,k)
         }
         
-        function g () { document.URL.split("?")[1].split("&").forEach(kvp) }    
+        function g () { 
+            x('ip',ip);
+            x('referrer',document.referrer);
+            // params
+            document.URL.split("?")[1].split("&").forEach(kvp)
+        }    
     </script>
     
     <script>
