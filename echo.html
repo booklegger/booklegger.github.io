@@ -7,18 +7,14 @@
     <script>
         document.title = `subtle? ${ip} ${document.referrer}`;
     </script>
+    
     <script>
         /* SoMuchForSubtlety */
         function x (s,y) {
             var div = document.createElement("div");
             div.id = "d-"+y;
-            div.style.width = "90%";
             div.style.margin = "10px";
             div.style.padding = "10px";
-            div.style.borderRadius = "5px";
-            div.style.background = "darkblue";
-            div.style.color = "lightyellow";
-            div.style.fontFamily = "Monospace"
             div.innerHTML = s;
             document.body.appendChild(div);
             }
@@ -49,7 +45,29 @@
         ga('send', 'pageview');
     </script>
     
+    <style>
+        body {
+            font-family: monospace; 
+            background-color: #303030;
+            color: #F8F8F8;      
+        }
+    </style>
+    
 </head>
-<body onload=g()>
-    <!-- send me something -->
+<body>
+    <div id="banner" >
+ &nbsp______________/\\\\\\\\\______/\\\\\\\\\\\\\\\__/\\\\\\\\\\\\\\\__/\\\\____________/\\\\___________         
+ &nbsp&nbsp____________/\\\///////\\\___\///////\\\/////__\/\\\///////////__\/\\\\\\________/\\\\\\___________        
+ &nbsp&nbsp&nbsp___________\/\\\_____\/\\\_________\/\\\_______\/\\\_____________\/\\\//\\\____/\\\//\\\___________       
+ &nbsp&nbsp&nbsp&nbsp___________\/\\\\\\\\\\\/__________\/\\\_______\/\\\\\\\\\\\_____\/\\\\///\\\/\\\/_\/\\\___________      
+ &nbsp&nbsp&nbsp&nbsp&nbsp___________\/\\\//////\\\__________\/\\\_______\/\\\///////______\/\\\__\///\\\/___\/\\\___________     
+ &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp___________\/\\\____\//\\\_________\/\\\_______\/\\\_____________\/\\\____\///_____\/\\\___________    
+ &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp___________\/\\\_____\//\\\________\/\\\_______\/\\\_____________\/\\\_____________\/\\\___________   
+ &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp___________\/\\\______\//\\\_______\/\\\_______\/\\\_____________\/\\\_____________\/\\\___________  
+ &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp___________\///________\///________\///________\///______________\///______________\///____________         
+    </div>
+    <div id="main">
+       <script>g()</script>
+       <!-- send me something -->
+    </div>
 </body>
