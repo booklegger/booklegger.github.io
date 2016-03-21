@@ -1,34 +1,30 @@
 <?php
-    function sr($name) {
-        $hv = htmlspecialchars($_SERVER[$name]);
-        $out = "<tr>\n<th>$name</th>\n<td>$hv</td>\n</tr>\n";
-        echo $out;
+
+    function rowboat($name,$value) {
+        safename = htmlspecialchars($name);
+        safevalue = htmlspecialchars($value);
+        echo "\t\t\t<tr>";
+        echo "\t\t\t\t<th>$safename</th>\n";
+        echo "\t\t\t\t<td>$safevalue</td>\n";
+        echo "\t\t\t<tr>";        
     }
 
     function parsec() {
         $names = array('REQUEST_METHOD','REQUEST_URI','HTTP_USER_AGENT','REMOTE_ADDR','REMOTE_PORT');
         foreach ($names as $name) {
-            $hv = htmlspecialchars($_SERVER[$name]);
-            $out = "<tr>\n<th>$name</th>\n<td>$hv</td>\n</tr>\n";
-            echo $out;
-        }
+            rowboat($name,$_SERVER[$name]);
+       }
     }
 
     function parcelPost() {
         foreach ($_POST as $name => $value) {
-            $hvalue = htmlspecialchars($value);
-            $hname = htmlspecialchars($name);
-            $out = "<tr>\n<th>$hname</th>\n<td>$hvalue</td>\n</tr>\n";
-            echo $out;
-          }
+            rowboat($name,$value);
+        }
     }
     
     function parseQueryString() {
         foreach ($_GET as $name => $value) {
-            $hvalue = htmlspecialchars($value);
-            $hname = htmlspecialchars($name);
-            $out = "<tr>\n<th>$hname</th>\n<td>$hvalue</td>\n</tr>\n";
-            echo $out;
+            rowboat($name,$value);
           } 
     }
 ?>
