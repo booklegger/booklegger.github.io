@@ -105,7 +105,7 @@
             </tr>
         </thead>
         <tbody>
-            <? parsec() ?>     
+<? parsec() ?>     
         <tbody>
     </table>
   
@@ -118,7 +118,7 @@
             </tr>
         </thead>
         <tbody>
-           <? parseQueryString() ?>
+<? parseQueryString() ?>
         <tbody>
     </table>
   
@@ -131,7 +131,7 @@
             </tr>
         </thead>
         <tbody>
-           <? parcelPost(); ?>
+<? parcelPost(); ?>
         <tbody>
     </table>
 
