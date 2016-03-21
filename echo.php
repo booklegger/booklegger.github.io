@@ -36,7 +36,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <link rel="icon" type="image/png" href="/art/xi.png" />
+    <link rel="icon" type="image/png" href="/art/sm4s.png" />
     <style>
         body {
             font-family: monospace; 
