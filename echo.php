@@ -1,8 +1,8 @@
 <?php
 
     function rowboat($name,$value) {
-        safename = htmlspecialchars($name);
-        safevalue = htmlspecialchars($value);
+        $safename = htmlspecialchars($name);
+        $safevalue = htmlspecialchars($value);
         echo "\t\t\t<tr>";
         echo "\t\t\t\t<th>$safename</th>\n";
         echo "\t\t\t\t<td>$safevalue</td>\n";
