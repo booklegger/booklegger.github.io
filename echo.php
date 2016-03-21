@@ -3,10 +3,10 @@
     function rowboat($name,$value) {
         $safename = htmlspecialchars($name);
         $safevalue = htmlspecialchars($value);
-        echo "           <tr>";
+        echo "           <tr>\n";
         echo "              <th>$safename</th>\n";
         echo "              <td>$safevalue</td>\n";
-        echo "           <tr>";        
+        echo "           <tr>\n";        
     }
 
     function parsec() {
